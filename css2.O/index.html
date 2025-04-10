@@ -154,7 +154,81 @@
         gap: 10px;
         display: flex;
       }
+    .cont-3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     margin: 100px;
+     
+      border: 1px solid black;
+    }
+    .form-container {
+      background-color: white;
+      padding: 50px;
+      border-radius: 12px;
+      width: 430px;
+      
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    div {
+      margin: 10px 0 5px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    input{
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      
+    }
+
+  textarea{
+    width: 330px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  .submit {
+      width: 325px;
+      margin-top: 20px;
+      padding: 12px;
+      background-color:rgb(1, 1, 129);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      
+    }
     
+
+   .submit:hover {
+        cursor: pointer;
+      background-color:rgb(16, 16, 196);
+    }
+    .reset{
+      width: 325px;
+      margin-top: 20px;
+      padding: 12px;
+      background-color:rgb(1, 1, 129);
+      color: white;
+      border: none;
+      border-radius: 6px;
+    }
+    .reset:hover {
+        cursor: pointer;
+      background-color:rgb(16, 16, 196);
+    }
     </style>
   </head>
   <body>
@@ -238,6 +312,7 @@
         />
       </div>
     </section>
+    
     <section class="cont-2">
       <div class="bungee-spice-regular">EXPERT TEACHER</div>
       <p class="text-1-2">
@@ -280,6 +355,31 @@
         </div>
       </div>
     </section>
+
+
+<section class="cont-3">
+  <div class="form-container">
+    <h2>Contact Us </h2>
+    <form>
+      <div class="name">Name</div>
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <div class="name">password</div>
+      <input type="password" id="name" placeholder="Enter your name" required />
+
+      <div class="email">Email</div>
+      <input type="email" id="email" placeholder="Enter your email" required />
+   
+      <div class="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+
+      <input class="reset" type="reset" id="name" placeholder="Enter your name" required />
+
+      <button class="submit" type="submit">SUBMIT</button>
+    </form>
+  </div>
+</section>
+
     <footer>
       <div class="main-footer">
         <div class="footer-1">
